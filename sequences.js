@@ -5,7 +5,7 @@ var sequences = {
     "Incident Type": [
         {
             "routing_key": "R02AW6CU5VG6XCS9PBSU4IKBQ1JALBR5",
-            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
+            "payload": payloads["Form: Incident Example"],
             "delay": 1
         }
         ]
