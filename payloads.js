@@ -239,7 +239,7 @@ var payloads = {
 //    "GuardDuty: No 2FA Auth (amountjoy)": ct_no2fa_1,
 //    "GuardDuty: No 2FA Auth (jdoe)": ct_no2fa_2,
 //    "GuardDuty: No 2FA Auth (dmendez)": ct_no2fa_3,
-    "Form: Incident Example": incident_form,
+    "GEO: Incident Example": incident_form,
     "GuardDuty: RDP Brute Force Attack": rdp_brute_force,
     "GuardDuty: SSH Brute Force Attack": ssh_brute_force,
     "GuardDuty: DNS Data Exfiltration": dns_data_exfiltration,
