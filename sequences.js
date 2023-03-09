@@ -4,12 +4,13 @@ var sequences = {
     "AWS Mini Demo": {
 
   
-    "Incident Form": 
-    {
-            "routing_key": "R02AW6CU5VG6XCS9PBSU4IKBQ1JALBR5",
+    "Incident Form": [
+        {
+            "routing_key": services["Form Demo"]["GEO"],
             "payload": payloads["Form: Incident Example"],
             "delay": 1
-    },
+        }
+    ],
   
     "GD 5 Sample Findings": [
         {
