@@ -1,4 +1,18 @@
 var sequences = {
+    
+    "Open Incident Form": {
+    
+    "Incident Type": [
+        {
+            "routing_key": "R02AW6CU5VG6XCS9PBSU4IKBQ1JALBR5",
+            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
+            "delay": 1
+        }
+        ]
+    }
+        
+    
+    
     "AWS Mini Demo": {
 
     "GD 5 Sample Findings": [
