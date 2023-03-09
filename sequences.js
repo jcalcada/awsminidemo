@@ -10,9 +10,7 @@ var sequences = {
         }
         ]
     }
-        
-    
-    
+   
     "AWS Mini Demo": {
 
     "GD 5 Sample Findings": [
