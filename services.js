@@ -1,7 +1,8 @@
 var services = { 
         [
-        "Form Demo": {
-                "GEO": "R02AW6CU5VG6XCS9PBSU4IKBQ1JALBR5"
+        "Form Demo":  {
+                "GEO": "R02AW6CU5VG6XCS9PBSU4IKBQ1JALBR5",
+                "CloudWatch": "7af745401e634056a6893d00b234d858"
         },
         
         "AWS Mini Demo": {
