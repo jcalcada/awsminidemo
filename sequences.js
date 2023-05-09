@@ -108,10 +108,8 @@ var sequences = {
             "delay": 2
         }       ],
     },
-       
     "Major Incident": {
-
-    "Major Incident Set1": [
+       "Major Incident Set1": [
         {
             "routing_key": services["Major Incident"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
