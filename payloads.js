@@ -226,6 +226,7 @@ var minimal_incident = {
          "component": "Licensing",
          "severity": "info"
       }
+};
 
 var payloads = {
 
