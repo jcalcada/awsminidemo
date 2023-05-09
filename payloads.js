@@ -227,7 +227,7 @@ var minimal_incident = {
          "severity": "info"
       }
 
-var payloads = {
+payloads = {
 
     "GuardDuty: RDP Brute Force Attack": rdp_brute_force,
     "GuardDuty: SSH Brute Force Attack": ssh_brute_force,
