@@ -32,7 +32,7 @@ function send(routing_key, payload) {
 }
 
 function populateSendSelects() {
-	var station = $('#station-select').val(4);
+	var station = $('#station-select').val();
 
 	$('#payload-select').html('');
 	$('#service-select').html('');
