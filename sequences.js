@@ -1,9 +1,6 @@
 var sequences = {
-    
-   
-    "AWS Mini Demo": {
-
-    "GD 5 Sample Findings": [
+   "AWS Mini Demo": {
+       "GD 5 Sample Findings": [
         {
             "routing_key": services["AWS Mini Demo"]["GuardDuty"],
             "payload": payloads["GuardDuty: RDP Brute Force Attack"],
