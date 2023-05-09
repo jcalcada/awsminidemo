@@ -228,12 +228,16 @@ var cw_jvm_restart = {
   "UnsubscribeURL" : "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:173840052742:pagerduty-ciexec:3317e35e-f66d-4a00-bcb9-2de6a6260aae"
 };
 
+var minimal_incident = {
+   "payload": {
+        "summary": "sent to new EO ", 
+         "source": "source of the alert",
+         "component": "Licensing",
+         "severity": "info"
+      }
+
 var payloads = {
-//    "GuardDuty: Sign In Failures": ct_sign_in_failures,
-//    "GuardDuty: Root Account Usage": ct_root_usage,
-//    "GuardDuty: No 2FA Auth (amountjoy)": ct_no2fa_1,
-//    "GuardDuty: No 2FA Auth (jdoe)": ct_no2fa_2,
-//    "GuardDuty: No 2FA Auth (dmendez)": ct_no2fa_3,
+
     "GuardDuty: RDP Brute Force Attack": rdp_brute_force,
     "GuardDuty: SSH Brute Force Attack": ssh_brute_force,
     "GuardDuty: DNS Data Exfiltration": dns_data_exfiltration,
