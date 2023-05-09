@@ -14,7 +14,7 @@ function send(routing_key, payload) {
 		headers: {
 			"Accept": "application/vnd.pagerduty+json;version=2.0"
 		},
-		if (${routing_key} == "R026AQHIV5CUUVIBMCORPHMQR0K5ADCX") url: 'https://events.pagerduty.com/R026AQHIV5CUUVIBMCORPHMQR0K5ADCX/enqueue;
+		if (${routing_key} == "R026AQHIV5CUUVIBMCORPHMQR0K5ADCX") url: `https://events.pagerduty.com/R026AQHIV5CUUVIBMCORPHMQR0K5ADCX/enqueue`;
 	           else url: `https://events.pagerduty.com/x-ere/R02AW55828P7PC1T5B0JMQCHS13V0OC7`
 
 		data: JSON.stringify(payload),
