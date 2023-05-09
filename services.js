@@ -7,4 +7,4 @@ var services = {
                 "GuardDuty": "R026AQHIV5CUUVIBMCORPHMQR0K5ADCX",
                 "CloudWatch": "R026AQHIV5CUUVIBMCORPHMQR0K5ADCX"
          }
-},
+};
