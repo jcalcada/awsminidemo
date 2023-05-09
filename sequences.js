@@ -114,7 +114,7 @@ var sequences = {
        
     "Major Incident": {
 
-    "Major Incident Set": [
+    "Major Incident Set1": [
         {
             "routing_key": services["Major Incident"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
@@ -135,5 +135,26 @@ var sequences = {
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         }       ],
+        "Major Incident Set2": [
+        {
+            "routing_key": services["Major Incident"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Major Incident"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Major Incident"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Major Incident"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
+            "delay": 2
+        }       ]
     }
 }
