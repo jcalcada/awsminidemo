@@ -209,15 +209,6 @@ var phd_ebs_volume_lost = {
   "UnsubscribeURL" : "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:957132980467:CloudWatch-test:7bdb10b4-7115-4b27-9057-d423ce900543"
 };
 
-//The below event needs to be update to match the format of the cw_jvm_restart event
-var cw_elasticity_issue = {
-    "Type": "Notification",
-    "Message":
-    "{\"version\":\"0\",\"id\":\"7bf73129-1428-4cd3-a780-95db273d1602\",\"detail-type\":\"ALARM\",\"source\":\"aws.health\",\"account\":\"123456789012\",\"time\":\"2016-06-05T06:27:57Z\",\"region\":\"ap-southeast-2\",\"resources\":[],\"detail\":{\"eventArn\":\"arn:aws:health:ap-southeast-2::event/CloudWatch_ELASTICLOADBALANCING_API_ISSUE_90353408594353980\",\"service\":\"ELASTICLOADBALANCING\",\"eventTypeCode\":\"CloudWatch_ELASTICLOADBALANCING_API_ISSUE\",\"eventTypeCategory\":\"issue\",\"startTime\":\"Sat, 04 Jun 2016 05:01:10 GMT\",\"endTime\":\"Sat, 04 Jun 2016 05:30:57 GMT\",\"eventDescription\":[{\"language\":\"en_US\",\"latestDescription\":\"A description of the event will be provided here\"}]}}",
-    "SigningCertURL": "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
-    "UnsubscribeURL": "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:785665517223:guard-duty:929fb486-5851-4cdc-8b25-8cc026afea70"
-};
-
 var cw_jvm_restart = {
   "Type" : "Notification",
   "TopicArn" : "arn:aws:sns:us-east-1:222222222:pagerduty-ec2-prod",
@@ -246,7 +237,6 @@ var payloads = {
     "GuardDuty: Recon NetworkPermissions": recon_network_permissions,
     "GuardDuty: Unauthorized Access": console_login_bc,
     "GuardDuty: Turn Off Logging (host 1)": turn_off_logging_bc1,
-//    "CloudWatch: Elasticity Issue": cw_elasticity_issue,
     "CloudWatch: JVM Restart": cw_jvm_restart,
     "CloudWatch: EC2 Store Drive Issue (AP SouthEast 2)": phd_ec2_store_drive_asia2,
     "CloudWatch: EBS Volume Lost (US East 1)": phd_ebs_volume_lost,
@@ -254,6 +244,7 @@ var payloads = {
     "CloudWatch: EC2 Store Drive Issue (US West 1)": phd_ec2_store_drive_west1,
     "CloudWatch: EC2 Store Drive Issue (US West 2)": phd_ec2_store_drive_west2,
     "CloudWatch: EC2 Store Drive Issue (AP SouthEast 2)": phd_ec2_store_drive_asia2,
-    "CloudWatch: EBS Volume Lost (US East 1)": phd_ebs_volume_lost
-     
+    "CloudWatch: EBS Volume Lost (US East 1)": phd_ebs_volume_lost,
+    "Major Incident": minimal_incident
+    
 };
