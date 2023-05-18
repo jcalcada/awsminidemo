@@ -120,6 +120,6 @@ var sequences = {
             "routing_key": services["Major Incident"]["Public"],
             "payload": payloads["Major Incident: MinimalMessage"],
             "delay": 2
-        }       ]
+        }       ],
     }
 }
