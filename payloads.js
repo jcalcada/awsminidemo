@@ -220,21 +220,13 @@ var cw_jvm_restart = {
 };
 
 var Minimal_Message = {
-   "payload": {
-         "description": "A Major Incident has been declared, we will provide further details shortly",
-         "source": "Major Incident",
-         "component": "eCommerce",
-         "severity": "Critical"
-      }
+   "description": "A Major Incident has been declared, we will provide further details shortly",
+   "Type": "Minimal Major Incident"
 };
 
 var Detailed_Message = {
-   "payload": {
          "description": "A Major Incident is stopping our eCommerce checkout from processing properly",
-         "source": "Major Incident",
-         "component": "eCommerce",
-         "severity": "Critical"
-      }
+         "Type": "Detailed Major Incident"
 };
 
 var payloads = {
