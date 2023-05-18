@@ -109,46 +109,16 @@ var sequences = {
         }       ],
     },
     "Major Incident": {
-       "Major Incident Set1": [
+       "Major Incident Private Message": [
         {
-            "routing_key": services["Major Incident"]["CloudWatch"],
-            "payload": payloads["CloudWatch: JVM Restart"],
-            "delay": 1
-        },
-        {
-            "routing_key": services["Major Incident"]["CloudWatch"],
-            "payload": payloads["CloudWatch: JVM Restart"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["Major Incident"]["CloudWatch"],
-            "payload": payloads["CloudWatch: JVM Restart"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["Major Incident"]["CloudWatch"],
-            "payload": payloads["CloudWatch: JVM Restart"],
+            "routing_key": services["Major Incident"]["Private"],
+            "payload": payloads["Major Incident: DetailedMessage"],
             "delay": 2
         }       ],
-        "Major Incident Set2": [
+        "Major Incident Public Message": [
         {
-            "routing_key": services["Major Incident"]["CloudWatch"],
-            "payload": payloads["CloudWatch: JVM Restart"],
-            "delay": 1
-        },
-        {
-            "routing_key": services["Major Incident"]["CloudWatch"],
-            "payload": payloads["CloudWatch: JVM Restart"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["Major Incident"]["CloudWatch"],
-            "payload": payloads["CloudWatch: JVM Restart"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["Major Incident"]["CloudWatch"],
-            "payload": payloads["CloudWatch: JVM Restart"],
+            "routing_key": services["Major Incident"]["Public"],
+            "payload": payloads["Major Incident: MinimalMessage"],
             "delay": 2
         }       ]
     }
