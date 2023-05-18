@@ -109,17 +109,27 @@ var sequences = {
         }       ],
     },
     "Major Incident": {
-       "Major Incident Private Message": [
-        {
-            "routing_key": services["Major Incident"]["Private"],
-            "payload": payloads["Major Incident: DetailedMessage"],
-            "delay": 2
-        }       ],
-        "Major Incident Public Message": [
+         "Major Incident Public Message": [
         {
             "routing_key": services["Major Incident"]["Public"],
-            "payload": payloads["Major Incident: MinimalMessage"],
+            "payload": payloads["Major Incident: Minimal_Message"],
+            "delay": 2
+        },      
+        {
+            "routing_key": services["Major Incident"]["Public"],
+            "payload": payloads["Major Incident: Minimal_Message"],
             "delay": 2
         }       ],
-    }
+      "Major Incident Private Message": [
+        {
+            "routing_key": services["Major Incident"]["Private"],
+            "payload": payloads["Major Incident: Detailed_Message"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Major Incident"]["Private"],
+            "payload": payloads["Major Incident: Detailed_Message"],
+            "delay": 2
+        }       ],
+     }
 }
