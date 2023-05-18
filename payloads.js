@@ -221,13 +221,14 @@ var cw_jvm_restart = {
 
 var Minimal_Message = {
   "Type" : "Critical",
-  "description" : "We have a major incident going on, please stand by for info",
-  "Message" : "{\"AlarmName\":\"JVMRestarted : Threshold Crossed\",\"AlarmDescription\":\"JVMRestarted : Threshold Crossed in US East (N. Virginia)\",\"CloudWatchAccountId\":\"22222222\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 4 datapoints [3.0 (17/11/18 01:22:00), 4.0 (17/11/18 01:20:00), 3.0 (17/11/18 01:18:00), 3.0 (17/11/18 01:13:00)] were greater than or equal to the threshold (2.0).\",\"StateChangeTime\":\"2018-11-17T01:33:00.405+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"RestartCount\",\"Namespace\":\"CloudWatch/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"SUM\",\"Unit\":\"Count\",\"Dimensions\":[{\"value\":\"production-ec2\",\"name\":\"TableName\"}],\"Period\":300,\"EvaluationPeriods\":4,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3000.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}"
+  "Location" : "East",
+  "description" : "We have a major incident going on, please stand by for info"
 };
 
 var Detailed_Message = {
   "Type" : "Critical",
-  "description" : "We have a major incident impacting the Checkout Process, we are coordinating a response",
+  "Location" : "West",
+  "description" : "We have a major incident impacting the Checkout Process, see message details",
   "Message" : "{\"AlarmName\":\"JVMRestarted : Threshold Crossed\",\"AlarmDescription\":\"JVMRestarted : Threshold Crossed in US East (N. Virginia)\",\"CloudWatchAccountId\":\"22222222\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 4 datapoints [3.0 (17/11/18 01:22:00), 4.0 (17/11/18 01:20:00), 3.0 (17/11/18 01:18:00), 3.0 (17/11/18 01:13:00)] were greater than or equal to the threshold (2.0).\",\"StateChangeTime\":\"2018-11-17T01:33:00.405+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"RestartCount\",\"Namespace\":\"CloudWatch/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"SUM\",\"Unit\":\"Count\",\"Dimensions\":[{\"value\":\"production-ec2\",\"name\":\"TableName\"}],\"Period\":300,\"EvaluationPeriods\":4,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3000.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}"
 };
 
