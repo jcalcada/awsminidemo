@@ -4,7 +4,7 @@ var services = {
                 "CloudWatch": "R02AW55828P7PC1T5B0JMQCHS13V0OC7"
          },
          "Major Incident": {
-                "Private": "R026AQHIV5CUUVIBMCORPHMQR0K5ADCXF",
-                "Public": "R026AQHIV5CUUVIBMCORPHMQR0K5ADCXF"
+                "Private": "R026AQHIV5CUUVIBMCORPHMQR0K5ADCX",
+                "Public": "R0286DX2T32WNIAZ6SDBNVK4Q0XBR3V3"
          }
 };
