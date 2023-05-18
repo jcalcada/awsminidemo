@@ -219,12 +219,21 @@ var cw_jvm_restart = {
   "UnsubscribeURL" : "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:173840052742:pagerduty-ciexec:3317e35e-f66d-4a00-bcb9-2de6a6260aae"
 };
 
-var minimal_incident = {
+var Minimal_Message = {
    "payload": {
-        "summary": "sent to new EO ", 
-         "source": "source of the alert",
-         "component": "Licensing",
-         "severity": "info"
+        "summary": "A Major Incident has been declared, we will provide further details shortly",
+         "source": "Major Incident",
+         "component": "eCommerce",
+         "severity": "Critical"
+      }
+};
+
+var Detailed_Message = {
+   "payload": {
+        "summary": "A Major Incident is stopping our eCommerce checkout from processing properly",
+         "source": "Major Incident",
+         "component": "eCommerce",
+         "severity": "Critical"
       }
 };
 
@@ -246,6 +255,7 @@ var payloads = {
     "CloudWatch: EC2 Store Drive Issue (US West 2)": phd_ec2_store_drive_west2,
     "CloudWatch: EC2 Store Drive Issue (AP SouthEast 2)": phd_ec2_store_drive_asia2,
     "CloudWatch: EBS Volume Lost (US East 1)": phd_ebs_volume_lost,
-    "Major Incident": minimal_incident
+    "Major Incident": Minimal_Message,
+    "Major Incident": Detailed_Message
     
 };
