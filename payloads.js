@@ -221,16 +221,26 @@ var cw_jvm_restart = {
 
 var Minimal_Message = {
    "description": "A Major Incident has been declared, we will provide further details shortly",
-   "Type": "Minimal Major Incident"
+   "Type": "Minimal Major Incident",
+  "TopicArn" : "arn:aws:sns:us-east-1:222222222:pagerduty-ec2-prod",
+  "Subject" : "ALARM: \"JVMRestarted : Threshold Crossed\" in US East (N. Virginia)",
+  "Message" : "{\"AlarmName\":\"JVMRestarted : Threshold Crossed\",\"AlarmDescription\":\"JVMRestarted : Threshold Crossed in US East (N. Virginia)\",\"CloudWatchAccountId\":\"22222222\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 4 datapoints [3.0 (17/11/18 01:22:00), 4.0 (17/11/18 01:20:00), 3.0 (17/11/18 01:18:00), 3.0 (17/11/18 01:13:00)] were greater than or equal to the threshold (2.0).\",\"StateChangeTime\":\"2018-11-17T01:33:00.405+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"RestartCount\",\"Namespace\":\"CloudWatch/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"SUM\",\"Unit\":\"Count\",\"Dimensions\":[{\"value\":\"production-ec2\",\"name\":\"TableName\"}],\"Period\":300,\"EvaluationPeriods\":4,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3000.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}",
+  "SigningCertURL" : "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
+  "UnsubscribeURL" : "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:173840052742:pagerduty-ciexec:3317e35e-f66d-4a00-bcb9-2de6a6260aae"
 };
 
 var Detailed_Message = {
          "description": "A Major Incident is stopping our eCommerce checkout from processing properly",
-         "Type": "Detailed Major Incident"
+         "Type": "Detailed Major Incident",
+  "TopicArn" : "arn:aws:sns:us-east-1:222222222:pagerduty-ec2-prod",
+  "description" : "ALARM: \"JVMRestarted : Threshold Crossed\" in US East (N. Virginia)",
+  "Subject" : "ALARM: \"JVMRestarted : Threshold Crossed\" in US East (N. Virginia)",
+  "Message" : "{\"AlarmName\":\"JVMRestarted : Threshold Crossed\",\"AlarmDescription\":\"JVMRestarted : Threshold Crossed in US East (N. Virginia)\",\"CloudWatchAccountId\":\"22222222\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 4 datapoints [3.0 (17/11/18 01:22:00), 4.0 (17/11/18 01:20:00), 3.0 (17/11/18 01:18:00), 3.0 (17/11/18 01:13:00)] were greater than or equal to the threshold (2.0).\",\"StateChangeTime\":\"2018-11-17T01:33:00.405+0000\",\"Region\":\"US East (N. Virginia)\",\"OldStateValue\":\"OK\",\"Trigger\":{\"MetricName\":\"RestartCount\",\"Namespace\":\"CloudWatch/EC2\",\"StatisticType\":\"Statistic\",\"Statistic\":\"SUM\",\"Unit\":\"Count\",\"Dimensions\":[{\"value\":\"production-ec2\",\"name\":\"TableName\"}],\"Period\":300,\"EvaluationPeriods\":4,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3000.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}",
+  "SigningCertURL" : "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
+  "UnsubscribeURL" : "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:173840052742:pagerduty-ciexec:3317e35e-f66d-4a00-bcb9-2de6a6260aae"
 };
 
 var payloads = {
-
     "GuardDuty: RDP Brute Force Attack": rdp_brute_force,
     "GuardDuty: SSH Brute Force Attack": ssh_brute_force,
     "GuardDuty: DNS Data Exfiltration": dns_data_exfiltration,
@@ -247,7 +257,6 @@ var payloads = {
     "CloudWatch: EC2 Store Drive Issue (US West 2)": phd_ec2_store_drive_west2,
     "CloudWatch: EC2 Store Drive Issue (AP SouthEast 2)": phd_ec2_store_drive_asia2,
     "CloudWatch: EBS Volume Lost (US East 1)": phd_ebs_volume_lost,
-    "Major Incident": Minimal_Message,
-    "Major Incident": Detailed_Message
-    
+    "Major Incident: Minimal_Message": Minimal_Message,
+    "Major Incident: Detailed_Message": Detailed_Message
 };
