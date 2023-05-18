@@ -221,7 +221,7 @@ var cw_jvm_restart = {
 
 var Minimal_Message = {
    "payload": {
-        "summary": "A Major Incident has been declared, we will provide further details shortly",
+         "description": "A Major Incident has been declared, we will provide further details shortly",
          "source": "Major Incident",
          "component": "eCommerce",
          "severity": "Critical"
@@ -230,7 +230,7 @@ var Minimal_Message = {
 
 var Detailed_Message = {
    "payload": {
-        "summary": "A Major Incident is stopping our eCommerce checkout from processing properly",
+         "description": "A Major Incident is stopping our eCommerce checkout from processing properly",
          "source": "Major Incident",
          "component": "eCommerce",
          "severity": "Critical"
